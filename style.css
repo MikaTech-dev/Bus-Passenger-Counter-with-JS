@@ -1,11 +1,16 @@
 * {
     margin: 0;
 }
-
+#wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff10;
+    align-content: center;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(./imgs/galaxy\ bg\ img.jpeg);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     color: #fff;
     text-align: center;
     height: 100vh;
@@ -17,4 +22,29 @@ h1 {
 }
 h2 {
     font-size: 30px;
+}
+#buttons1-2{
+    align-items: center;
+}
+button {
+    margin-top: 10px;
+    /* padding: 12px; */
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+button:active {
+    transition: 2ms ease-in;
+    width: 170px;
+    height: 55px;
+    font-size: 27px;
+}
+#increment-btn {
+    background-color: rgb(0, 199, 0);
+}
+#decrement-btn {
+    background-color: rgb(199, 0, 0);
 }
