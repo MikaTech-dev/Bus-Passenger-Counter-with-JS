@@ -11,7 +11,7 @@ function increment() {
     if (
       confirmation &&
       (confirmation.toLowerCase() == "yes" ||
-        confirmation.toLowerCase() == "yeah")
+        confirmation.toLowerCase() == "yeah" || confirmation.toLowerCase() == "y" || confirmation.toLowerCase() == "yup")
     ) {
       // tolowercase() is a function, so remember to call it as one and have it and other functions called in a () of their own. You also need to evaluate all other cases separately when using functions
       dayStarted = true;
@@ -25,6 +25,17 @@ function increment() {
   passengerCount.textContent = totalCount;
 }
 
+// creating a function to display the alert only once
+let decrementVar = false
+function decrementAlert() {
+  while (decrementVar == false) {
+    alert (
+      "You can't spit out more humans than have already entered your bus fool"
+    )
+    decrementVar = true
+  }
+}
+// remember the functions are being called inside the html document
 function decrement() {
   if (passengerCount.textContent == "None") {
     alert("You have yet to start your day");
@@ -32,8 +43,6 @@ function decrement() {
     let totalCount = +passengerCount.textContent - 1;
     passengerCount.textContent = totalCount;
   } else {
-    alert(
-      "You can't spit our more humans than have already entered your bus fool"
-    );
+    decrementAlert()
   }
 }
