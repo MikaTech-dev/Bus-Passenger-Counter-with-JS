@@ -24,22 +24,24 @@ h2 {
     font-size: 30px;
 }
 #buttons1-2{
+    height: 65px;
     align-items: center;
 }
 button {
     margin-top: 10px;
     /* padding: 12px; */
-    width: 200px;
-    height: 60px;
+    width: 170px;
+    height: 55px;
     font-size: 30px;
     outline: none;
     border: none;
     color: #fff;
-    transition: 0.4s;
+    transition: 0.2s;
+    align-self: center;
 }
 button:active {
-    width: 170px;
-    height: 55px;
+    width: 160px;
+    height: 52px;
     font-size: 27px;
 }
 #increment-btn {
